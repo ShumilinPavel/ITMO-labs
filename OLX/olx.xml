@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problem>
+    <ol>
+        <li>
+            <multiplechoiceresponse>
+                <label>
+                    Сервер на Express запущен так:
+                    <br />
+                    <code>
+                        require('express')(3333).use((r1, r2, next, a = 5555) =>
+                        <br />
+                        next(42)).get('*', (req, res) => res.send('OK')).listen(8888);
+                    </code>
+                    <br />
+                    Какой ответ будет отослан браузеру либо иному клиенту по корневому маршруту?
+                </label>
+                <choicegroup type="MultipleChoice">
+                    <choice correct="false">OK</choice>
+                    <choice correct="true">42</choice>
+                    <choice correct="false">302</choice>
+                    <choice correct="false">500</choice>
+                </choicegroup>
+            </multiplechoiceresponse>
+        </li>
+        <li>
+            <stringresponse answer="9" type="ci">
+                <label>
+                    Сколько байт занимает BSON-представление для
+                    <code>{a: true}</code>
+                    ?
+                </label>
+                <textline size="50" />
+            </stringresponse>
+        </li>
+        <li>
+            <stringresponse answer="nodejs" type="ci">
+                <label>
+                    Каково значение поля
+                    <code>question</code>
+                    единственного документа коллекции
+                    <code>finaltest</code>
+                    базы данных mongodemo при подключении пользователя
+                    <code>nodestudent</code>
+                    с паролем
+                    <code>studentnode</code>
+                    к хосту
+                    <code>cluster0.qatsq.mongodb.net</code>
+                    ?
+                </label>
+                <description>Ответ напишите латиницей с маленькой буквы.</description>
+                <textline size="50" />
+            </stringresponse>
+        </li>
+        <li>
+            <stringresponse answer="emptiness " type="ci">
+                <label>
+                    При отправке запроса методом DELETE на адрес
+                    <a href="https://node-server.online/r/void">https://node-server.online/r/void</a>
+                    какое значение получает заголовок
+                    <code>form</code>
+                    ?
+                </label>
+                <description>Ответ напишите латиницей с маленькой буквы.</description>
+                <textline size="50" />
+                <additional_answer answer="" />
+            </stringresponse>
+        </li>
+        <li>
+            <multiplechoiceresponse>
+                <label>Какой стиль ссылок (permalinks) в Wordpress не требует специальной настройки сервера?</label>
+                <choicegroup type="MultipleChoice">
+                    <choice correct="true">plain (по умолчанию, ugly)</choice>
+                    <choice correct="false">day and name</choice>
+                    <choice correct="false">post name (pretty)</choice>
+                    <choice correct="false">month and name</choice>
+                </choicegroup>
+            </multiplechoiceresponse>
+        </li>
+        <li>
+            <multiplechoiceresponse>
+                <label>
+                    Какой код статуса соответствует ситуации, когда присланная клиентом информация о желаемой форме
+                    представления ответа в Accept не соответствует предусмотренным формам в методе
+                    <code>res.format</code>
+                    ?
+                </label>
+                <choicegroup type="MultipleChoice">
+                    <choice correct="false">302</choice>
+                    <choice correct="false">404</choice>
+                    <choice correct="true">406</choice>
+                    <choice correct="false">500</choice>
+                </choicegroup>
+            </multiplechoiceresponse>
+        </li>
+        <li>
+            <stringresponse answer="Response" type="ci">
+                <label>Какой объект, получаемый с помощью Fetch API, содержит свойство headers?</label>
+                <textline size="50" />
+                <description>Ответ напишите латиницей с заглавной буквы.</description>
+            </stringresponse>
+        </li>
+    </ol>
+</problem>
