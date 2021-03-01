@@ -9,3 +9,5 @@
 [Задание;](https://kodaktor.ru/g/proto_chain) [Репозиторий](https://github.com/ShumilinPavel/ITMO-labs/tree/main/proto-chain/)
 ### 3. ITER-001
 [Задание;](https://kodaktor.ru/iter_001) [Репозиторий](https://github.com/ShumilinPavel/ITMO-labs/tree/main/ITER-001/)
+### 4. FUNC-007
+[Задание;](https://kodaktor.ru/func_007) [Репозиторий](https://github.com/ShumilinPavel/ITMO-labs/tree/main/FUNC-007/)
