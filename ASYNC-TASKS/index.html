@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Поехали</button>
+    <ol id="values">
+        <li>10</li>
+        <li>20</li>
+        <li>30</li>
+    </ol>
+    <ol id="urls">
+        <li>https://kodaktor.ru/api/m/</li>
+        <li>https://kodaktor.ru/api/MS2/</li>
+        <li>https://kodaktor.ru/api/MS3/</li>
+    </ol>
+
+    <script>
+        let result = '';
+        const values = Array.from(document.querySelectorAll('ol#values li')).map(item => Number(item.innerHTML));
+        const URLs = Array.from(document.querySelectorAll('ol#urls li')).map(item => item.innerHTML);
+
+        document
+        .querySelector('button')
+        .addEventListener('click',
+            async ({ target: t }) => {
+                t.textContent = 'Ожидание результата...';
+                const headers = { 'Content-Type': 'application/json' };
+                const resultsFromServices = [];
+                for (let i = 0; i < URLs.length; i++) {
+                    const chain = resultsFromServices.length > 0 ? `/${resultsFromServices[resultsFromServices.length - 1]}` : '';
+                    const resultFromService = await fetch(URLs[i] + values[i] + chain, { headers }).then(response => response.json());
+                    resultsFromServices.push(resultFromService.result);
+                }
+                result = resultsFromServices.join(' ');
+                t.textContent = `Результат: ${result}`;
+            }
+        );
+    </script>
+
+</body>
+</html>
