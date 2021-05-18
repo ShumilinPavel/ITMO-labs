@@ -10,6 +10,6 @@
 ### 3. ITER-001
 [Задание;](https://kodaktor.ru/iter_001) [Репозиторий](https://github.com/ShumilinPavel/ITMO-labs/tree/main/ITER-001/)
 ### 4. FUNC-007
-[Задание;](https://kodaktor.ru/func_007) [Репозиторий](https://github.com/ShumilinPavel/ITMO-labs/tree/main/FUNC-007/) [Демонстрация](https://kodaktor.ru/g/__func_7d337)
+[Задание;](https://kodaktor.ru/func_007) [Репозиторий;](https://github.com/ShumilinPavel/ITMO-labs/tree/main/FUNC-007/) [Демонстрация](https://kodaktor.ru/g/__func_7d337)
 ### 5. ASYNC-TASKS
 [Задание;](https://kodaktor.ru/async_tasks) [Репозиторий;](https://github.com/ShumilinPavel/ITMO-labs/tree/main/ASYNC-TASKS/) [Демонстрация](https://shumilinpavel.github.io/ITMO-labs/ASYNC-TASKS/index.html)
