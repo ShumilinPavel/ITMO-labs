@@ -4,7 +4,7 @@
     <xsl:template match="/">
     <html>
         <body>
-            <h4 id="author" title="GossJS" style="display: none">Павел Шумилин</h4>
+            <h4 id="author" title="GossJS">Павел Шумилин</h4>
             <div style="text-align:center; margin: 20px">
                 <xsl:apply-templates />
             </div>

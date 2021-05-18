@@ -7,7 +7,7 @@
                <xsl:call-template name="scripts" />
             </head>
             <body>
-                <h4 id="author" title="GossJS" style="display: none">Павел Шумилин</h4>
+                <h4 id="author" title="GossJS">Павел Шумилин</h4>
                 <div style="font-size: 24pt; text-align:center; margin: 20px">
                     <math>
                         <xsl:apply-templates />
